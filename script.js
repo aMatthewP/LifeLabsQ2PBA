@@ -1,11 +1,7 @@
-window.onload = main; //Calls main function when window loads
+//Calls main function when window loads
+window.onload = main;
 
-/*
-*
-*		THE MAIN FUNCTION
-*	where the code will be executed
-* */
-
+// Functions sets up accordion button event listeners
 function SetupAccordionButton()
 {
 	document.querySelectorAll(".accordion-button").forEach(button => 
@@ -25,11 +21,33 @@ function SetupAccordionButton()
 				}
 
 			});
+		button.addEventListener("resize", () => 
+			{
+				console.log("Resize Event");
+				const accordionContent = button.nextElementSibling;
+				if (button.classList.contains("accordion-button-active"))
+				{
+					accordionContent.style.maxHeight = accordionContent.scrollHeight + "px";
+				}
+			});
 	});
+	window.onresize = () => {
+		document.querySelectorAll(".accordion-button").forEach(button => {
+			const accordionContent = button.nextElementSibling;
+			if (button.classList.contains("accordion-button-active"))
+			{
+				accordionContent.style.maxHeight = accordionContent.scrollHeight + "px";
+			}
+		});
+	};
 }
+
+/*
+*		THE MAIN FUNCTION
+*	where the code will be executed
+* */
 
 function main() 
 {
 	SetupAccordionButton();
-	
 }

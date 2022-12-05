@@ -174,16 +174,16 @@ div.header {
 .accordion-button-content,
 .accordion-button-content-active
 {
-	transition: max-height 200ms;
+	transition: max-height 250ms;
 
 	background: var(--bg-secondary-color);
 	/* display: none; */
 	max-height:0;
-	overflow: auto;
+	overflow: hidden;
 }
 
 .accordion-button-content-active {
-	transition: opacity 200ms;
-	/* display: block; */
-	overflow:auto;
+	transition: max-height 200ms;
+	/* display: mk; */
+	/* overflow:hidden; */
 }
