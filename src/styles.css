@@ -115,10 +115,6 @@ main {
 	display:inline;
 }
 
-/* section { */
-/* 	margin: 1rem; */
-/* } */
-
 section p {
 	margin: 1rem;
 }
@@ -152,7 +148,14 @@ header section {
 	justify-content: center;
 }
 
-header section h1 {
+header section div {
+	border-bottom: 1px solid white;
+	padding-bottom: 1rem;
+	text-transform: uppercase;
+	max-width:75%;
+}
+
+header section div h1 {
 	font-size: 3rem;
 }
 
