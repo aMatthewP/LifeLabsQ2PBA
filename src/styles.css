@@ -139,21 +139,21 @@ header img {
 }
 
 header div {
-	flex-grow:1;
-	display:flex;
-	align-items:center;
-	justify-content:center;
+	flex-grow: 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 header section {
-	flex-grow:1;
+	flex-grow: 1;
 	display: flex;
 	align-items:center;
-	justify-content:center;
+	justify-content: center;
 }
 
 header section h1 {
-	font-size:3rem;
+	font-size: 3rem;
 }
 
 div.header {
