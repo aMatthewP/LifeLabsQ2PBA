@@ -119,14 +119,20 @@ section p {
 	margin: 1rem;
 }
 
-main>section {
+main.faq h1 {
+	padding-top: 2rem;
+	margin: 0 0 10rem 2rem;
+	font-size: 3rem;
+}
+
+main>section.preview {
 	height: 100vh;
 	background-color: var(--header-bg-primary-color);
 	display: flex;
 	flex-basis: 0;
 }
 
-main>section div {
+main>section.preview div {
 	display: flex;
 	flex: 1;
 	justify-content: center;
@@ -134,12 +140,12 @@ main>section div {
 	padding: 2rem;
 }
 
-main>section> div h1 {
+main>section.preview > div h1 {
 	align-items: center;
 	font-size: 2rem;
 }
 
-main>section div.carousel {
+main>section.preview  div.carousel {
 	overflow: hidden;
 	position: relative;
 	margin-right: 2rem;
@@ -147,14 +153,14 @@ main>section div.carousel {
 	display: flex;
 }
 
-main>section div.carousel-images {
+main>section.preview  div.carousel-images {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	flex-direction: row;
 }
 
-main>section img {
+main>section.preview  img {
 	display: none;
 	width: 500px;
 	height: 500px;
@@ -163,15 +169,27 @@ main>section img {
 	border-radius: 20%;
 }
 
-main>section .carousel-button-previous, 
-main>section .carousel-button-next {
+main>section.preview  .carousel-button-previous, 
+main>section.preview  .carousel-button-next {
 	background-color: var(--header-bg-primary-color);
 	font-size: 2rem;
 }
 
-main>section .carousel-button-previous:hover, 
-main>section .carousel-button-next:hover {
+main>section.preview  .carousel-button-previous:hover, 
+main>section.preview  .carousel-button-next:hover {
 	color: var(--text-primary-color);
+}
+
+main section.faq {
+	height: 100vh;
+	background-color: var(--bg-primary-color);
+	display: flex;
+	flex-direction: column;
+}
+
+main section.faq div.content {
+	align-items: center;
+	justify-content: center;
 }
 
 header {
