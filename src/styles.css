@@ -119,6 +119,18 @@ section p {
 	margin: 1rem;
 }
 
+main>section {
+	height: 100vh;
+	background-color: var(--header-bg-primary-color);
+	display: flex;
+}
+
+main>section>p {
+	font-size: 5rem;
+	align-items: center;
+	
+}
+
 header {
 	width: auto;
 	margin: 0;
@@ -212,6 +224,4 @@ div.header {
 
 .accordion-button-content-active {
 	transition: max-height 200ms;
-	/* display: mk; */
-	/* overflow:hidden; */
 }
