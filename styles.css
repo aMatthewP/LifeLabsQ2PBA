@@ -123,12 +123,55 @@ main>section {
 	height: 100vh;
 	background-color: var(--header-bg-primary-color);
 	display: flex;
+	flex-basis: 0;
 }
 
-main>section>p {
-	font-size: 5rem;
+main>section div {
+	display: flex;
+	flex: 1;
+	justify-content: center;
 	align-items: center;
-	
+	padding: 2rem;
+}
+
+main>section> div h1 {
+	align-items: center;
+	font-size: 2rem;
+}
+
+main>section div.carousel {
+	overflow: hidden;
+	position: relative;
+	margin-right: 2rem;
+	width: 50%;
+	display: flex;
+}
+
+main>section div.carousel-images {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: row;
+}
+
+main>section img {
+	display: none;
+	width: 500px;
+	height: 500px;
+	justify-content: center;
+	transform: translateX(0);
+	border-radius: 20%;
+}
+
+main>section .carousel-button-previous, 
+main>section .carousel-button-next {
+	background-color: var(--header-bg-primary-color);
+	font-size: 2rem;
+}
+
+main>section .carousel-button-previous:hover, 
+main>section .carousel-button-next:hover {
+	color: var(--text-primary-color);
 }
 
 header {
