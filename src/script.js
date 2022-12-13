@@ -4,6 +4,18 @@ window.onload = main;
 //Initalize global variables
 let slideIndex = 0;
 
+/*
+*		THE MAIN FUNCTION
+*	where the code will be executed
+* */
+
+function main() 
+{
+	slideIndex = Math.floor(document.querySelectorAll(".carousel-images > img").length / 2);
+	SetupAccordionButton();
+	SetupImageCarousel();
+}
+
 // Functions sets up accordion button event listeners
 function SetupAccordionButton()
 {
@@ -65,16 +77,4 @@ function SetupImageCarousel() {
 			images[slideIndex].style.display = "block";
 		})
 	})
-}
-
-/*
-*		THE MAIN FUNCTION
-*	where the code will be executed
-* */
-
-function main() 
-{
-	slideIndex = Math.floor(document.querySelectorAll(".carousel-images > img").length / 2);
-	SetupAccordionButton();
-	SetupImageCarousel();
 }
