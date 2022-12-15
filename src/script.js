@@ -9,7 +9,7 @@ let slideIndex = 0;
 *	where the code will be executed
 * */
 
-function main() 
+function main()
 {
 	slideIndex = Math.floor(document.querySelectorAll(".carousel-images > img").length / 2);
 	SetupAccordionButton();
@@ -70,7 +70,7 @@ function SetupImageCarousel() {
 		{
 			const images = document.querySelectorAll(".carousel-images > img");
 
-			if (slideIndex === images.length-1)
+			if (slideIndex === images.length - 1)
 				return;
 
 			images[slideIndex++].style.display = "none";
