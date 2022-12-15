@@ -65,13 +65,13 @@ main {
 }
 
 .navbar-nav {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 100%;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 100%;
 }
 
 .nav-item {
@@ -119,10 +119,35 @@ section p {
 	margin: 1rem;
 }
 
+main.faq {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
 main.faq h1 {
-	padding-top: 2rem;
-	margin: 0 0 10rem 2rem;
 	font-size: 3rem;
+	flex: 1;
+	position: absolute;
+	top: 15%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+main.faq div.content {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+main.faq div.header img {
+	width: 100%;
+	max-height: auto;
+}
+
+main.faq div.header {
+	overflow: hidden;
 }
 
 main>section.preview {
@@ -250,6 +275,7 @@ div.header {
 	text-align:left;
 	background: var(--header-bg-primary-color);
 	transition: background 200ms;
+	font-size: 1.25rem;
 }
 
 .accordion-button::after,
@@ -277,7 +303,7 @@ div.header {
 {
 	transition: max-height 250ms;
 
-	background: var(--bg-secondary-color);
+	background: #232427;
 	/* display: none; */
 	max-height:0;
 	overflow: hidden;
@@ -285,4 +311,8 @@ div.header {
 
 .accordion-button-content-active {
 	transition: max-height 200ms;
+}
+
+.accordion-button-content p {
+	padding: 1rem;
 }
