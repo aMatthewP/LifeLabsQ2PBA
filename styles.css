@@ -125,6 +125,57 @@ main.faq {
 	flex-direction: column;
 }
 
+main.about-us {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+main.about-us section {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+main.about-us div.header {
+	overflow: hidden;
+}
+
+main.about-us div.header img {
+	width: 100%;
+	max-height: auto;
+}
+
+main.about-us div.header h1 {
+	font-size: 3rem;
+	flex: 1;
+	position: absolute;
+	top: 15%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+main.about-us section div {
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	justify-content: center;
+	align-items: center;
+}
+
+main.about-us section div p {
+	padding: 3rem 20rem 3rem 20rem;
+}
+
+main.about-us section div p a:visited {
+	text-decoration: none;
+	color: rgb(103, 103, 231);
+}
+
+main.about-us section div p a:link {
+	text-decoration: none;
+}
+
 main.faq h1 {
 	font-size: 3rem;
 	flex: 1;
