@@ -256,6 +256,25 @@ main>section.preview  .carousel-button-next:hover {
 	color: var(--text-primary-color);
 }
 
+main section.intro-video {
+	height: 100vh;
+	background-color: var(--bg-primary-color);
+	display: flex;
+	flex-basis: 0;
+	justify-content:space-around;
+}
+
+main section.intro-video div {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+
+main section.intro-video div p {
+	font-size: 2rem;
+}
+
 main section.faq {
 	height: 100vh;
 	background-color: var(--bg-primary-color);
